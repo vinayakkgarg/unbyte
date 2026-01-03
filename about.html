@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unbyte AI - Custom ML Solutions for Your Business</title>
+    <title>About Us - Unbyte AI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -70,18 +70,15 @@
         }
 
         /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .page-hero {
+            padding: 10rem 5% 5rem;
             background: linear-gradient(135deg, #3700B3 0%, #BB86FC 100%);
+            text-align: center;
             position: relative;
             overflow: hidden;
-            padding: 8rem 5% 5rem;
         }
 
-        .hero::before {
+        .page-hero::before {
             content: '';
             position: absolute;
             width: 150%;
@@ -96,169 +93,167 @@
             100% { transform: translate(50px, 50px); }
         }
 
-        .hero-content {
-            max-width: 1200px;
-            text-align: center;
+        .page-hero-content {
             position: relative;
             z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        .hero h1 {
-            font-size: 4rem;
+        .page-hero h1 {
+            font-size: 3.5rem;
             font-weight: 800;
             color: white;
-            margin-bottom: 1.5rem;
-            line-height: 1.2;
-            animation: fadeInUp 0.8s ease;
+            margin-bottom: 1rem;
         }
 
-        .hero p {
-            font-size: 1.5rem;
-            color: rgba(255, 255, 255, 0.95);
-            margin-bottom: 3rem;
-            font-weight: 300;
-            animation: fadeInUp 0.8s ease 0.2s backwards;
+        .page-hero p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
         }
 
-        .cta-button {
-            display: inline-block;
-            background: #BB86FC;
-            color: #000000;
-            padding: 1.2rem 3rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            animation: fadeInUp 0.8s ease 0.4s backwards;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(187, 134, 252, 0.5);
-            background: #03DAC6;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Why Choose Section */
-        .why-choose {
-            padding: 8rem 5%;
+        /* Company Section */
+        .company-section {
+            padding: 6rem 5%;
             background: #1e1e1e;
         }
 
+        .section-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
         .section-title {
-            text-align: center;
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 800;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
             background: linear-gradient(135deg, #BB86FC 0%, #03DAC6 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
-        .features-grid {
-            max-width: 1200px;
-            margin: 0 auto;
+        .company-content {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .company-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .values-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
+            gap: 2rem;
+            margin-top: 3rem;
         }
 
-        .feature-card {
-            padding: 2.5rem;
-            border-radius: 20px;
+        .value-card {
+            padding: 2rem;
             background: #121212;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-            border-color: #BB86FC;
-            box-shadow: 0 20px 40px rgba(187, 134, 252, 0.3);
-        }
-
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #3700B3 0%, #BB86FC 100%);
             border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
+            border-left: 4px solid #BB86FC;
         }
 
-        .feature-card h3 {
-            font-size: 1.5rem;
+        .value-card h3 {
+            font-size: 1.3rem;
             font-weight: 700;
-            margin-bottom: 1rem;
             color: #FFFFFF;
+            margin-bottom: 0.8rem;
         }
 
-        .feature-card p {
+        .value-card p {
             color: rgba(255, 255, 255, 0.7);
-            font-size: 1rem;
             line-height: 1.7;
         }
 
-        /* Trust Section */
-        .trust-section {
+        /* Founder Section */
+        .founder-section {
             padding: 6rem 5%;
             background: #121212;
-            text-align: center;
         }
 
-        .trust-section h2 {
+        .founder-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .founder-image {
+            position: relative;
+        }
+
+        .founder-photo {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3700B3 0%, #BB86FC 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            color: white;
+            box-shadow: 0 20px 60px rgba(187, 134, 252, 0.4);
+            margin: 0 auto;
+        }
+
+        .founder-content h2 {
             font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
             color: #FFFFFF;
         }
 
-        .trust-badges {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 4rem;
-            flex-wrap: wrap;
-        }
-
-        .trust-badge {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .trust-number {
-            font-size: 3.5rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #BB86FC 0%, #03DAC6 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .trust-label {
-            color: rgba(255, 255, 255, 0.7);
+        .founder-title {
+            font-size: 1.3rem;
+            color: #BB86FC;
             font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .founder-bio {
+            color: rgba(255, 255, 255, 0.7);
             font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .founder-bio p {
+            margin-bottom: 1.5rem;
+        }
+
+        .founder-expertise {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #1e1e1e;
+            border-radius: 15px;
+            border-left: 4px solid #03DAC6;
+        }
+
+        .founder-expertise h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 1rem;
+        }
+
+        .expertise-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .tag {
+            padding: 0.5rem 1rem;
+            background: #121212;
+            border-radius: 20px;
+            color: #03DAC6;
+            font-weight: 600;
+            font-size: 0.9rem;
         }
 
         /* Footer */
@@ -323,16 +318,24 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
+            .page-hero h1 {
                 font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.2rem;
             }
 
             .section-title {
                 font-size: 2rem;
+            }
+
+            .founder-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .founder-photo {
+                width: 250px;
+                height: 250px;
+                font-size: 6rem;
+                margin: 0 auto;
             }
 
             .nav-links {
@@ -341,10 +344,6 @@
 
             .footer-content {
                 grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .trust-badges {
                 gap: 2rem;
             }
         }
@@ -364,57 +363,70 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Customise ML Solutions<br>For Your Business</h1>
-            <p>Transform your startup or enterprise with cutting-edge AI and machine learning solutions</p>
-            <a href="#contact" class="cta-button">Book a Free AI Strategy Call Today</a>
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>About Unbyte AI</h1>
+            <p>Empowering businesses through innovative AI and machine learning solutions</p>
         </div>
     </section>
 
-    <!-- Why Choose Section -->
-    <section class="why-choose" id="services">
-        <h2 class="section-title">Why Choose Unbyte AI?</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">🎯</div>
-                <h3>Custom Solutions</h3>
-                <p>Tailored AI and ML solutions designed specifically for your unique business challenges and objectives.</p>
+    <!-- Company Section -->
+    <section class="company-section">
+        <div class="section-container">
+            <h2 class="section-title">Our Company</h2>
+            <div class="company-content">
+                <p>Unbyte AI is a cutting-edge AI and machine learning agency dedicated to transforming businesses through intelligent automation and data-driven insights. We specialize in creating custom ML solutions that solve real-world problems and drive measurable results.</p>
+                
+                <p>Founded with a vision to democratize AI technology, we work with startups, growing businesses, and enterprises to unlock the potential of their data. Our approach combines deep technical expertise with a practical understanding of business challenges, ensuring that every solution we build delivers tangible value.</p>
+
+                <p>From predictive analytics and natural language processing to computer vision and recommendation systems, we craft tailored solutions that scale with your business. We believe in building long-term partnerships, not just delivering projects.</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">📈</div>
-                <h3>Scalable</h3>
-                <p>Build solutions that grow with your business, from startup MVP to enterprise-scale deployments.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">✓</div>
-                <h3>Proven Track Record</h3>
-                <p>Successfully delivered ML projects across industries with measurable results and ROI.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>Fast & Cost Efficient</h3>
-                <p>Rapid development cycles and optimized workflows that deliver value without breaking the bank.</p>
+
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Innovation First</h3>
+                    <p>We stay at the forefront of AI technology to deliver cutting-edge solutions.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Client Success</h3>
+                    <p>Your success is our success. We're committed to delivering measurable ROI.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Transparency</h3>
+                    <p>Clear communication and honest timelines throughout every project.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Trust Section -->
-    <section class="trust-section">
-        <h2>Trusted by Customers Worldwide</h2>
-        <div class="trust-badges">
-            <div class="trust-badge">
-                <div class="trust-number">50+</div>
-                <div class="trust-label">Projects Delivered</div>
+    <!-- Founder Section -->
+    <section class="founder-section">
+        <div class="founder-container">
+            <div class="founder-image">
+                <div class="founder-photo">VG</div>
             </div>
-            <div class="trust-badge">
-                <div class="trust-number">30+</div>
-                <div class="trust-label">Happy Clients</div>
-            </div>
-            <div class="trust-badge">
-                <div class="trust-number">15+</div>
-                <div class="trust-label">Countries</div>
+            <div class="founder-content">
+                <h2>Vinayakk Garg</h2>
+                <div class="founder-title">Founder & CEO</div>
+                <div class="founder-bio">
+                    <p>Vinayakk Garg is the founder and driving force behind Unbyte AI. With a passion for artificial intelligence and a vision to make AI accessible to businesses of all sizes, he established Unbyte AI to bridge the gap between cutting-edge technology and practical business applications.</p>
+                    
+                    <p>With extensive experience in machine learning, deep learning, and AI system architecture, Vinayakk has led the development of numerous successful AI projects across various industries. His expertise spans from building production-ready ML models to designing scalable AI infrastructure.</p>
+                    
+                    <p>Vinayakk believes in the transformative power of AI to solve complex problems and create new opportunities. His hands-on approach and commitment to excellence ensure that every project at Unbyte AI meets the highest standards of quality and innovation.</p>
+                </div>
+                <div class="founder-expertise">
+                    <h3>Expertise</h3>
+                    <div class="expertise-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">NLP</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">MLOps</span>
+                        <span class="tag">AI Strategy</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
